@@ -5,7 +5,7 @@
 get_libs()
 {
     local local_path="/usr/local"
-    local libp="lib libexec lib/compat"
+    local libp="lib libexec"
     local libs=""
     for lpath in $libp
     do
