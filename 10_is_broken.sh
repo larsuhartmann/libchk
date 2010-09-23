@@ -8,8 +8,9 @@
 is_broken()
 {
     # cache ldd output
-    local lddout=`ldd "$1" 2>/dev/null`
-    
+    local lddout
+    lddout=`ldd "$1" 2>/dev/null`
+
     # check for broken links
     if echo "$lddout" | grep -Fq "not found"
     then
