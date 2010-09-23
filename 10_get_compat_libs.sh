@@ -1,7 +1,7 @@
 get_compat_libs()
 {
     local libs=""
-    for lib in /usr/local/lib/compat/*
+    for lib in /usr/local/lib/compat/pkg/*
     do
         if [ ! -f "$lib" ]
         then
