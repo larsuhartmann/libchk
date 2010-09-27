@@ -1,6 +1,6 @@
 compat_libs=`get_compat_libs`
 
-for broke in `get_broken_libs`
+for broke in `get_broken_objs`
 do
     pkg=`get_pkg $broke`
     broken_pkgs="$broken_pkgs $pkg"
