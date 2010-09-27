@@ -5,12 +5,10 @@
 # returns: string containing path to objects on stdout
 get_objs()
 {
-    local local_path="/usr/local"
-    local objp="lib libexec bin sbin"
     local objs=""
-    for opath in $objp
+    for opath in ${SEARCHPATH}
     do
-        for obj in ${local_path}/${opath}/*
+        for obj in ${LOCALBASE}/${opath}/*
         do
             if [ ! -f "$obj" ]
             then
