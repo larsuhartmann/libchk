@@ -5,6 +5,6 @@ chklib: *.sh
 	chmod +x chklib
 
 clean:
-	@rm -f *~ \#*\# chklib
+	@rm -f *~ \#*\# libchk
 
 .PHONY: all clean
